@@ -11,13 +11,14 @@ app.use(
             directives: {
                 defaultSrc: ["'self'"],
                 scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
-                connectSrc: ["'self'", "http://localhost:5000"],
+                connectSrc: ["'self'", "http://localhost:5000","https://stock-management-backend-lvuu.onrender.com"],
                 imgSrc: ["'self'", "data:"],
                 styleSrc: ["'self'", "'unsafe-inline'"],
             },
         },
     })
 );
+
 // ✅ Server Start
 app.listen(PORT, () => {
     console.log(`✅ Server is running on port ${PORT}`);
